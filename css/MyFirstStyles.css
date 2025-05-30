@@ -1,5 +1,8 @@
+/* My First CSS Style Document */
+
+/* Element Selectors */
 body {
-    background-color: #1D3557;
+    background-color: #68778c;
 }
 
 h1,
@@ -19,6 +22,18 @@ button {
     background-color: #457B9D;
 }
 
+p {
+    color: #F1FAEE;
+    font-weight: bold;
+    line-height: 2;
+}
+
+/* Class Selectors */
+.tag {
+    background-color: #E63946;
+}
+
+/* ID Selectors */
 #signup {
     background-color: #A8DADC;
     color: #1D3557;
@@ -28,8 +43,11 @@ button {
     background-color: #1D3557;
 }
 
-p {
-    color: #F1FAEE;
-    font-weight: bold;
-    line-height: 2;
+/* Descendant Selector */
+.post span {
+    color: rgb(244, 244, 244);
+}
+
+footer a {
+    color: red;
 }
