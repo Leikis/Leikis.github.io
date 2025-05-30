@@ -33,6 +33,10 @@ p {
     background-color: #E63946;
 }
 
+section.post {
+    background-color: rgb(139, 139, 97);
+}
+
 /* ID Selectors */
 #signup {
     background-color: #A8DADC;
@@ -50,4 +54,23 @@ p {
 
 footer a {
     color: red;
+}
+
+/* Adjacent Selector */
+input+button {
+    background-color: red;
+}
+
+/* Direct Child */
+footer>a {
+    color: rgb(0, 231, 0);
+}
+
+/* Attribute Selector */
+input[type="password"] {
+    color: greenyellow;
+}
+
+a[href*="google"] {
+    color: magenta;
 }
