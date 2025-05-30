@@ -28,13 +28,31 @@ p {
     line-height: 2;
 }
 
+/* Pseudo Classes*/
+.post button:hover {
+    background-color: aqua;
+}
+
+.post button:active {
+    background-color: rgb(255, 0, 0);
+}
+
+section.post:nth-of-type(2n) {
+    background-color: rgb(139, 139, 97);
+}
+
+/* Pseudo Elements */
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::selection {
+    background-color: orange;
+}
+
 /* Class Selectors */
 .tag {
     background-color: #E63946;
-}
-
-section.post {
-    background-color: rgb(139, 139, 97);
 }
 
 /* ID Selectors */
