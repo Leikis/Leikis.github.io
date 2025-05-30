@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Tables and Forms</title>
+</head>
+
+<body>
+    <a href="index.html">RETURN LINK</a>
+    <h1>My First Tables and Forms</h1>
+    <h2>Table - V1</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Element1_1</td>
+                <td>Element1_2</td>
+                <td>Element1_3</td>
+            </tr>
+            <tr>
+                <td>Element2_1</td>
+                <td>Element2_2</td>
+                <td>Element2_3</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Table - V2</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">1</th>
+                <th colspan="2">2-3</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Element1_1</td>
+                <td>Element1_2</td>
+                <td>Element1_3</td>
+            </tr>
+            <tr>
+                <td>Element2_1</td>
+                <td>Element2_2</td>
+                <td>Element2_3</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Forms - V1</h2>
+    <form action="index.html">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" name="username" placeholder="Username">
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input id="password" type="password" name="password" placeholder="Password">
+        </p>
+        <p>
+            <label for="color">Pick a color</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a number:</label>
+            <input id="number" type="number" name="num" placeholder="Enter A Number">
+        </p>
+        <button type="button">Normal Button</button>
+        <button type="submit">Submit Button</button>
+    </form>
+
+    <h2>Forms - V2 "Hijacking Google/Reddit"</h2>
+    <h3>REDDIT</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q" id="">
+        <button>Search Reddit</button>
+    </form>
+    <h3>GOOGLE</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" id="">
+        <button>Search Google</button>
+    </form>
+    <h3>YOUTUBE</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" id="">
+        <button>Search Youtube</button>
+    </form>
+    <h2>Forms - V3 "More Inputs!</h2>
+    <h3>Checkbox</h3>
+    <form action="">
+        <label for="agree">I Agree To Everything</label>
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <button>Submit</button>
+    </form>
+    <h3>Radio</h3>
+    <form action="">
+        Favourite Animal
+        <p>
+            <label for="Dog">Dog</label>
+            <input type="radio" name="Animal" id="Dog" value="Dog">
+            <label for="Cat">Cat</label>
+            <input type="radio" name="Animal" id="Cat" value="Cat">
+            <label for="Snake">Snake</label>
+            <input type="radio" name="Animal" id="Snake" value="Snake">
+        </p>
+        <button>Submit</button>
+    </form>
+    <h3>Select</h3>
+    <label for="ShirtSize">Choose your size:</label>
+    <select name="ShirtSize" id="ShirtSize">
+        <option value="">--Please Choose An Option--</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+    </select>
+    <h3>Range</h3>
+    <form action="">
+        <label for="Volume">Vol:</label>
+        <input type="range" name="volume_lvl" id="Volume" min="0" max="20">
+        <p>
+            <label for="Request">Any Special Requests?:</label>
+            <br>
+            <textarea name="" id="Request" rows="10" cols="40" placeholder="Type Something Here!"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">First Name:</label>
+        <input type="text" name="first" id="first" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="5" maxlength="10" required>
+        <button>Submit</button>
+        <p>
+            <input type="email" name="" id="" required>
+            <input type="url" name="" id="" required>
+        </p>
+    </form>
+</body>
+
+</html>
