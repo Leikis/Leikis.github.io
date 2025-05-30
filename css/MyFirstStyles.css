@@ -1,3 +1,35 @@
-h1 {
-    color: red
+body {
+    background-color: #1D3557;
+}
+
+h1,
+h2 {
+    color: #A8DADC;
+    text-align: left;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    font-size: 16px;
+    color: #F1FAEE;
+    border-color: #F1FAEE;
+    background-color: #457B9D;
+}
+
+#signup {
+    background-color: #A8DADC;
+    color: #1D3557;
+}
+
+#login {
+    background-color: #1D3557;
+}
+
+p {
+    color: #F1FAEE;
+    font-weight: bold;
+    line-height: 2;
 }
