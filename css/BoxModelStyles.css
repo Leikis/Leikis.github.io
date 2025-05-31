@@ -1,0 +1,85 @@
+/* CSS Box Model Styles */
+
+/* Element Selectors */
+body {
+    margin: 0px;
+}
+
+div {
+    width: 200px;
+}
+
+h1 {
+    background-color: bisque;
+    width: 200px;
+
+    box-sizing: border-box;
+
+    padding-left: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+/* Pseudo Classes*/
+
+
+/* Pseudo Elements */
+
+
+/* Class Selectors */
+
+
+/* ID Selectors */
+
+#one {
+    background-color: pink;
+
+    box-sizing: border-box;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+
+    padding-left: 100px;
+
+    margin-left: 50px;
+}
+
+#two {
+    background-color: rgb(233, 160, 172);
+
+    box-sizing: content-box;
+    border-width: 10px;
+    border-style: groove;
+    border-color: black;
+    border-left-width: 15px;
+
+    padding-left: 100px;
+
+    margin-top: 100px;
+}
+
+#three {
+    background-color: rgb(216, 136, 149);
+
+    box-sizing: content-box;
+    border: 10px solid green;
+    border-radius: 6%;
+
+    margin-top: 30px;
+
+
+}
+
+/* Descendant Selector */
+
+
+/* Adjacent Selector */
+
+
+/* Direct Child */
+
+
+/* Attribute Selector */
