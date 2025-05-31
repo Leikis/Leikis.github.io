@@ -1,0 +1,80 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    width: 300px;
+    padding: 0px;
+    line-height: 200%;
+
+}
+
+span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+
+    margin: 10px;
+
+    display: inline-block;
+
+
+}
+
+div:not(:has(a)) {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 10px solid black;
+    margin: 20px;
+
+    display: inline-block;
+}
+
+section {
+    background-color: bisque;
+    width: 800px;
+    height: 800px;
+}
+
+section div {
+    background-color: palevioletred !important;
+    width: 50%;
+    height: 50%;
+
+
+    display: block;
+}
+
+article {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+p {
+    font-size: 0.5em;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: aquamarine;
+    color: white;
+}
+
+ul {
+    font-size: 1.5rem;
+}
