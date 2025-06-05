@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/FirstTailwind.css">
+</head>
+
+<body>
+    <a href="../index.html" class="text-white">RETURN LINK</a>
+
+</body>
+<div class="bg-violet-200 h-10 w-full border-2 border-violet-600 rounded-md my-4 p-2 flex justify-center items-center ">
+    <h1 class="text-center font-mono font-extrabold">First Header</h1>
+</div>
+
+<div class="grid grid-cols-5 gap-2 mt-2 mx-2">
+    <div class="h-16 rounded-full bg-blue-500"></div>
+    <div class="h-16 rounded-full bg-orange-500"></div>
+    <div class="h-16 rounded-full bg-green-500"></div>
+</div>
+
+<div class="flex justify-center">
+    <div class="bg-violet-200 h-auto w-fit border-2 border-violet-600 rounded-md my-4 p-2">
+        <h1 class="text-center font-mono font-extrabold">Media Queries</h1>
+    </div>
+</div>
+
+<div class="sm:bg-amber-500 md:bg-amber-700">
+    <p class="text-white">I appear on wide screens!</p>
+</div>
+
+<div class="flex justify-center">
+    <div class="bg-violet-200 h-auto w-fit border-2 border-violet-600 rounded-md my-4 p-2">
+        <h1 class="text-center font-mono font-extrabold">Dark Mode</h1>
+    </div>
+</div>
+
+<div class="m-14 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black">
+    <h3 class="text-base font-medium tracking-tight text-slate-900 dark:text-white">Writes Upside-Down</h3>
+    <p class="mt-2 text-sm text-slate-500 dark:text-blue-100">The Zero Gravity Pen can be used to write in any
+        orientation, including upside-down. It even works in outer space.</p>
+
+    <button id="toggleDark" class="px-4 py-2 text-sm font-medium mt-8 text-blue-900 bg-blue-100 rounded-md"
+        onclick="document.body.classList.toggle('dark')">Toggle Dark Mode</button>
+</div>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggleDark = document.getElementById('toggleDark')
+        toggleDark.addEventListener('click', function () {
+            if (document.documentElement.classList.includes('dark')) {
+                document.documentElement.classList.remove('dark')
+            }
+            else {
+                document.documentElement.classList.add('dark')
+            }
+            alert("click!")
+        });
+    });
+</script>
+
+</html>

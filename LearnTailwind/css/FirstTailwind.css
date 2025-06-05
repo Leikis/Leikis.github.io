@@ -1,0 +1,5 @@
+body {
+    background-color: #10172a;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
